@@ -42,6 +42,7 @@ const Course = ({ match, history }) => {
         if (id === '0') {
             if (!course.name) {
                 setIsNameEmpty(true);
+                return;
             }
             if (!course.points) {
                 setIsPointsEmpty(true);

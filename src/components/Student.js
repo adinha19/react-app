@@ -43,6 +43,7 @@ const Student = ({ match, history }) => {
         if (id === '0') {
             if (!student.firstName) {
                 setIsFirstNameEmpty(true);
+                return;
             }
             if (!student.lastName) {
                 setIsLastNameEmpty(true);
